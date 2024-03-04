@@ -69,7 +69,7 @@ const LandingPage = () => {
 
       {/* Skills Section */}
       <div className="container mx-auto mt-16 mb-8">
-        <h1 className="text-3xl font-bold mb-4">Skills</h1>
+        <h1 className="text-3xl font-bold mb-4">Some of my skills</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-xl font-semibold">React</h2>
