@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Quicksand({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Based Technologies',
-  description: ''
+  title: 'Kevin Klatt | Loryhoof',
+  description: 'Kevin Klatt | Loryhoof | Portfolio'
 }
 
 export default function RootLayout({ children }) {
