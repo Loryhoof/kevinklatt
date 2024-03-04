@@ -141,7 +141,7 @@ const LandingPage = () => {
           {/*Project 3*/}
           <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md">
             <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/projects/crooktown.png" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
+              <img src="/assets/projects/crooktown.jpg" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
             </a>
             <div>
               <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
