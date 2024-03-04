@@ -94,6 +94,28 @@
   to { width: var(--progress-percent); }
 }
 
+.progress-bar {
+  transition: width 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+}
+
+.progress-bar:hover {
+  filter: brightness(200%);
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.hover\:shake:hover {
+  animation: shake 0.5s;
+}
+
+
 
 
 

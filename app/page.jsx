@@ -74,84 +74,85 @@ const LandingPage = () => {
           <div>
             <h2 className="text-xl font-semibold">React</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-blue-500" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
+              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-semibold">JavaScript</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-yellow-500" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+              <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-semibold">TypeScript</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-blue-500" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
+              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-semibold">Tailwind</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-green-500" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '65%' }}></div>
+              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '65%' }}></div>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-semibold">C#</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-red-500" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '75%' }}></div>
+              <div className="h-2 bg-red-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '75%' }}></div>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-semibold">Three.js</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-purple-500" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '80%' }}></div>
+              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '80%' }}></div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto mt-16 mb-8">
-        <h1 className="text-3xl font-bold mb-4">Things I&apos;ve built</h1>
-        {/* Project 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md">
-            <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/projects/cuti.png" alt="Cuti.ai Logo" className="w-20 h-20 mr-4 rounded-full" />
-            </a>
-            <div>
-              <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                <h2 className="text-xl font-bold mb-2">Cuti.ai</h2>
-              </a>
-              <p className="text-gray-400">AI Chatting Platform</p>
-            </div>
-          </div>
-          {/* Project 2 */}
-          <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md">
-            <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/projects/fs.png" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
-            </a>
-            <div>
-              <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                <h2 className="text-xl font-bold mb-2">PortraitAIArt.com</h2>
-              </a>
-              <p className="text-gray-400">AI Portrait Generation Service</p>
-            </div>
-          </div>
-
-          {/*Project 3*/}
-          <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md">
-            <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/projects/crooktown.jpg" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
-            </a>
-            <div>
-              <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                <h2 className="text-xl font-bold mb-2">CrookTown</h2>
-              </a>
-              <p className="text-gray-400">GTA-inspired Web Game made in Three.js</p>
-            </div>
-          </div>
-        </div>
+  <h1 className="text-3xl font-bold mb-4">Things I've built</h1>
+  {/* Project 1 */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
+      <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/projects/cuti.png" alt="Cuti.ai Logo" className="w-20 h-20 mr-4 rounded-full" />
+      </a>
+      <div>
+        <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+          <h2 className="text-xl font-bold mb-2">Cuti.ai</h2>
+        </a>
+        <p className="text-gray-400">AI Chatting Platform</p>
       </div>
+    </div>
+    {/* Project 2 */}
+    <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
+      <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/projects/fs.png" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
+      </a>
+      <div>
+        <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+          <h2 className="text-xl font-bold mb-2">PortraitAIArt.com</h2>
+        </a>
+        <p className="text-gray-400">AI Portrait Generation Service</p>
+      </div>
+    </div>
+
+    {/*Project 3*/}
+    <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
+      <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/projects/crooktown.jpg" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
+      </a>
+      <div>
+        <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+          <h2 className="text-xl font-bold mb-2">CrookTown</h2>
+        </a>
+        <p className="text-gray-400">GTA-inspired Web Game made in Three.js</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       
 
       <div className="container mx-auto mt-16 mb-8">
