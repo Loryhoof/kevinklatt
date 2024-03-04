@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { FaGithub, FaYoutube, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord } from 'react-icons/fa';
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
@@ -207,6 +207,9 @@ const LandingPage = () => {
               <li><a href="mailto:klattkev@gmail.com" className="hover:text-white flex items-center">
                 <FaEnvelope className="mr-2" /> klattkev@gmail.com
               </a></li>
+              <li className="hover:text-white flex items-center">
+                <FaDiscord className="mr-2" /> loryhoof
+              </li>
             </ul>
           </div>
         </div>
