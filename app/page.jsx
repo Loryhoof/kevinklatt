@@ -5,7 +5,7 @@ import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord } from 'react-ico
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
-  const [pageViews, setPageViews] = useState(1839);
+  const [pageViews, setPageViews] = useState(343);
 
   useEffect(() => {
     let interval;
