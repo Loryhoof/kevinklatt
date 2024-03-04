@@ -8,9 +8,10 @@ const LandingPage = () => {
   const [pageViews, setPageViews] = useState(1839);
 
   useEffect(() => {
+    let interval;
     const animateViewCount = () => {
       let counter = 0;
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         counter += 10;
         if (counter >= pageViews) {
           clearInterval(interval);
@@ -19,11 +20,11 @@ const LandingPage = () => {
         setViewCount(counter);
       }, 10);
     };
-
+  
     animateViewCount();
-
+  
     return () => clearInterval(interval);
-  }, []);
+  }, []);  
 
   return (
     <div className="bg-black min-h-screen font-sans text-white">
@@ -115,39 +116,75 @@ const LandingPage = () => {
   {/* Project 1 */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
-      <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/projects/cuti.png" alt="Cuti.ai Logo" className="w-20 h-20 mr-4 rounded-full" />
-      </a>
+    <div className="w-36 h-36 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
+      <img src="/assets/projects/cuti.png" alt="Cuti.ai Logo" className="max-w-full max-h-full rounded-full" />
+    </div>
       <div>
         <a href="https://cuti.ai" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">Cuti.ai</h2>
         </a>
         <p className="text-gray-400">AI Chatting Platform</p>
+        <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">MongoDB</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Custom LLM</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Elevenlabs</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stable Diffusion</span>
+      </div>
       </div>
     </div>
     {/* Project 2 */}
     <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
-      <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/projects/fs.png" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
-      </a>
+      <div className="w-36 h-36 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
+        <img src="/assets/projects/fs.png" alt="PortraitAIArt.com Logo" className="max-w-full max-h-full rounded-full" />
+      </div>
       <div>
         <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">PortraitAIArt.com</h2>
         </a>
         <p className="text-gray-400">AI Portrait Generation Service</p>
+        <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">MongoDB</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Next.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stable Diffusion</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">LoRa</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stripe</span>
+      </div>
       </div>
     </div>
 
     {/*Project 3*/}
     <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
-      <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/projects/crooktown.jpg" alt="PortraitAIArt.com Logo" className="w-20 h-20 mr-4 rounded-full" />
-      </a>
+      <div className="w-24 h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
+        <img src="/assets/projects/crooktown.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
+      </div>
       <div>
         <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">CrookTown</h2>
         </a>
-        <p className="text-gray-400">GTA-inspired Web Game made in Three.js</p>
+        <p className="text-gray-400">GTA-inspired Sandbox Web Game made in Three.js</p>
+        <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Socket.io</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Cannon.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WebGL</span>
+      </div>
+      <div className="font-semibold">
+          Play Now{" "}
+          <a href="https://loryhoof.github.io/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            CrookTown
+          </a>
+        </div>
+        <div className="font-semibold mt-1">
+          Watch Trailer{" "}
+          <a href="https://www.youtube.com/watch?v=v12txz36WXg" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            YouTube
+          </a>
+        </div>
       </div>
     </div>
   </div>
