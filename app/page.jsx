@@ -194,7 +194,7 @@ const LandingPage = () => {
 
       <div className="container mx-auto mt-16 mb-8">
         <div className="text-center">
-          <p className="text-lg font-bold text-gray-300">Viewed by: <span className="text-yellow-400">{viewCount}</span> People</p>
+          <p className="text-lg font-bold text-gray-300">Viewed by <span className="text-yellow-400">{viewCount}</span> Hoomans</p>
         </div>
       </div>
 
