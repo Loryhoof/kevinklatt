@@ -112,7 +112,7 @@ const LandingPage = () => {
       </div>
 
       <div className="container mx-auto mt-16 mb-8">
-  <h1 className="text-3xl font-bold mb-4">Things I've built</h1>
+  <h1 className="text-3xl font-bold mb-4">Things I&apos;ve built</h1>
   {/* Project 1 */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
