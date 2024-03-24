@@ -5,7 +5,7 @@ import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord } from 'react-ico
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
-  const [pageViews, setPageViews] = useState(343);
+  const [pageViews, setPageViews] = useState(443);
 
   useEffect(() => {
     let interval;
@@ -55,8 +55,8 @@ const LandingPage = () => {
           <div className="md:w-1/2">
             <div className="flex flex-col justify-center md:justify-start mb-4">
             <div>
-              <h1 className="text-5xl font-bold mb-4"><span className="text-yellow-400">Greetings</span>, I&apos;m Kevin Klatt!</h1>
-              <p className="text-2xl">I&apos;m a 22-year-old software engineer based in Germany 🇩🇪 with a passion for crafting <span className="text-yellow-400 font-semibold">digital solutions</span>. 💻</p>
+              <h1 className="text-5xl font-bold mb-4"><span className="text-yellow-400">Hi there</span>, I&apos;m Kevin Klatt!</h1>
+              <p className="text-2xl">I&apos;m a 23-year-old software engineer based in Germany 🇩🇪 with a passion for crafting <span className="text-yellow-400 font-semibold">digital solutions</span>. 💻</p>
               <p className="text-2xl mt-4">With over 6 years of experience in the industry, I specialize in React, JavaScript, Tailwind, and Three.js. With an entrepreneurial spirit, I&apos;ve brought my ideas to life, creating solutions that resonate.</p>
             </div>
 
@@ -169,7 +169,6 @@ const LandingPage = () => {
         <div className="flex flex-wrap mt-2">
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Socket.io</span>
-          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Cannon.js</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WebGL</span>
       </div>
