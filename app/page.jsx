@@ -57,7 +57,7 @@ const LandingPage = () => {
             <div>
               <h1 className="text-5xl font-bold mb-4"><span className="text-yellow-400">Hi there</span>, I&apos;m Kevin Klatt!</h1>
               <p className="text-2xl">I&apos;m a 23-year-old software engineer based in Germany 🇩🇪 with a passion for crafting <span className="text-yellow-400 font-semibold">digital solutions</span>. 💻</p>
-              <p className="text-2xl mt-4">With over 6 years of experience in the industry, I specialize in React, JavaScript, Tailwind, and Three.js. With an entrepreneurial spirit, I&apos;ve brought my ideas to life, creating solutions that resonate.</p>
+              <p className="text-2xl mt-4">With over 6 years of experience in the industry, I specialize in React, TypeScript and Three.js. With a creative spirit, I&apos;ve brought my ideas to life, creating solutions that resonate.</p>
             </div>
 
             </div>
@@ -105,7 +105,7 @@ const LandingPage = () => {
           <div>
             <h2 className="text-xl font-semibold">Three.js</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '80%' }}></div>
+              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
         </div>
