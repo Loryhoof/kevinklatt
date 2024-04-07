@@ -5,14 +5,14 @@ import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord } from 'react-ico
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
-  const [pageViews, setPageViews] = useState(443);
+  const [pageViews, setPageViews] = useState(223);
 
   useEffect(() => {
     let interval;
     const animateViewCount = () => {
       let counter = 0;
       interval = setInterval(() => {
-        counter += 10;
+        counter += 10; 
         if (counter >= pageViews) {
           clearInterval(interval);
           counter = pageViews;
