@@ -200,7 +200,7 @@ const LandingPage = () => {
         <img src="/assets/projects/g.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
       </div>
       <div>
-        <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+        <a href="https://github.com/Loryhoof/bonkers2" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">Bonkers</h2>
         </a>
         <p className="text-gray-400">Survival game made in Three.js</p>
