@@ -79,6 +79,12 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
+            <h2 className="text-xl font-semibold">Three.js</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+            </div>
+          </div>
+          <div>
             <h2 className="text-xl font-semibold">JavaScript</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
               <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
@@ -91,9 +97,9 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-semibold">Tailwind</h2>
+            <h2 className="text-xl font-semibold">Rust</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '65%' }}></div>
+              <div className="h-2 bg-orange-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '40%' }}></div>
             </div>
           </div>
           <div>
@@ -103,11 +109,12 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-semibold">Three.js</h2>
+            <h2 className="text-xl font-semibold">Tailwind</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '65%' }}></div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -182,6 +189,37 @@ const LandingPage = () => {
           Watch Trailer{" "}
           <a href="https://www.youtube.com/watch?v=v12txz36WXg" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
             YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/*Project 4*/}
+    <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
+      <div className="w-24 h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
+        <img src="/assets/projects/g.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
+      </div>
+      <div>
+        <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+          <h2 className="text-xl font-bold mb-2">Bonkers</h2>
+        </a>
+        <p className="text-gray-400">Survival game made in Three.js</p>
+        <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">TypeScript</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Rust</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WASM</span>
+      </div>
+      <div className="font-semibold">
+          Play Now{" "}
+          <a href="https://bonkers-ts.vercel.app/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+        <div className="font-semibold mt-1">
+          Github{" "}
+          <a href="https://github.com/Loryhoof/bonkers2" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
           </a>
         </div>
       </div>
