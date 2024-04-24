@@ -56,10 +56,10 @@ const LandingPage = () => {
             <div className="flex flex-col justify-center md:justify-start mb-4">
             <div>
               <h1 className="text-5xl font-bold mb-4"><span className="text-yellow-400">Hi there</span>, I&apos;m Kevin Klatt!</h1>
-              <p className="text-2xl">I&apos;m a 23-year-old software engineer from Germany 🇩🇪 with a passion for crafting <span className="text-yellow-400 font-semibold">digital solutions</span>. 💻</p>
+              <p className="text-2xl">I&apos;m a 23-year-old software engineer from Germany 🇩🇪 with a passion for <span className="text-yellow-400 font-semibold">3D</span>, <span className="text-yellow-400 font-semibold">Game Development</span> and all things <span className="text-yellow-400 font-semibold">Web</span>.  💻</p>
               <p className="text-2xl mt-4">
               With over 4 years of experience in the industry, I specialize in React, TypeScript and Three.js. </p>
-              <p className='text-2xl mt-4'>I enjoy turning ideas into reality and creating solutions that solve real-world problems.</p>
+              <p className='text-2xl mt-4'>I find joy in bringing both my own ideas and those of others to life, through creative problem-solving.</p>
             </div>
 
             </div>
