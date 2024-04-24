@@ -57,7 +57,9 @@ const LandingPage = () => {
             <div>
               <h1 className="text-5xl font-bold mb-4"><span className="text-yellow-400">Hi there</span>, I&apos;m Kevin Klatt!</h1>
               <p className="text-2xl">I&apos;m a 23-year-old software engineer from Germany 🇩🇪 with a passion for crafting <span className="text-yellow-400 font-semibold">digital solutions</span>. 💻</p>
-              <p className="text-2xl mt-4">With over 6 years of experience in the industry, I specialize in React, TypeScript and Three.js. With a creative spirit, I&apos;ve brought my ideas to life, creating solutions that resonate.</p>
+              <p className="text-2xl mt-4">
+              With over 4 years of experience in the industry, I specialize in React, TypeScript and Three.js. </p>
+              <p className='text-2xl mt-4'>I enjoy turning ideas into reality and creating solutions that solve real-world problems.</p>
             </div>
 
             </div>
@@ -111,7 +113,7 @@ const LandingPage = () => {
           <div>
             <h2 className="text-xl font-semibold">Tailwind</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '65%' }}></div>
+              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
 
@@ -132,6 +134,7 @@ const LandingPage = () => {
         </a>
         <p className="text-gray-400">AI Chatting Platform</p>
         <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">JavaScript</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">MongoDB</span>
@@ -139,6 +142,12 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Elevenlabs</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stable Diffusion</span>
       </div>
+      <div className="font-semibold mt-1">
+          Website{" "}
+          <a href="https://cuti.ai" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
       </div>
     </div>
     {/* Project 2 */}
@@ -150,8 +159,9 @@ const LandingPage = () => {
         <a href="https://portraitaiart.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">PortraitAIArt.com</h2>
         </a>
-        <p className="text-gray-400">AI Portrait Generation Service</p>
+        <p className="text-gray-400">AI Portrait Generation SaaS</p>
         <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">JavaScript</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">MongoDB</span>
@@ -160,6 +170,18 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">LoRa</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stripe</span>
       </div>
+      <div className="font-semibold mt-1">
+          Website{" "}
+          <a href="https://portraitaiart.com" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+        <div className="font-semibold mt-1">
+          Github{" "}
+          <a href="https://github.com/Loryhoof/nextjs-saas" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
       </div>
     </div>
 
@@ -174,6 +196,7 @@ const LandingPage = () => {
         </a>
         <p className="text-gray-400">GTA-inspired Sandbox Web Game made in Three.js</p>
         <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">TypeScript</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Socket.io</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Cannon.js</span>
@@ -197,7 +220,7 @@ const LandingPage = () => {
     {/*Project 4*/}
     <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
       <div className="w-24 h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
-        <img src="/assets/projects/g.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
+        <img src="/assets/projects/g2.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
       </div>
       <div>
         <a href="https://github.com/Loryhoof/bonkers2" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
@@ -205,8 +228,9 @@ const LandingPage = () => {
         </a>
         <p className="text-gray-400">Survival game made in Three.js</p>
         <div className="flex flex-wrap mt-2">
-          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">TypeScript</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Three.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WebGL</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Rust</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WASM</span>
       </div>
@@ -224,16 +248,48 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
+
+    {/* Thai Learning App */}
+    <div className="border border-gray-700 p-4 flex items-center bg-black rounded-lg shadow-md hover:shake">
+      <div className="w-24 h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center mr-4">
+        <img src="/assets/projects/thai.png" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
+      </div>
+      <div>
+        <a href="https://thai-learn.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+          <h2 className="text-xl font-bold mb-2">Thai Learning App</h2>
+        </a>
+        <p className="text-gray-400">Flashcard-inspired Thai language learning Web App</p>
+        <div className="flex flex-wrap mt-2">
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">TypeScript</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
+      </div>
+      <div className="font-semibold">
+          Website{" "}
+          <a href="https://thai-learn.vercel.app/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+        <div className="font-semibold mt-1">
+          Github{" "}
+          <a href="https://github.com/Loryhoof/learning-platform" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
       
 
-      <div className="container mx-auto mt-16 mb-8">
+      {/* <div className="container mx-auto mt-16 mb-8">
         <div className="text-center">
           <p className="text-lg font-bold text-gray-300">Viewed by <span className="text-yellow-400">{viewCount}</span> Hoomans</p>
         </div>
-      </div>
+      </div> */}
 
 
       <footer className="border-t border-gray-800 py-8 bg-black text-gray-400">
