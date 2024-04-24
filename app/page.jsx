@@ -191,7 +191,7 @@ const LandingPage = () => {
         <img src="/assets/projects/crooktown.jpg" alt="CrookTown Logo" className="max-w-full max-h-full rounded-full" />
       </div>
       <div>
-        <a href="https://loryhoof.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+        <a href="https://crooktown.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
           <h2 className="text-xl font-bold mb-2">CrookTown</h2>
         </a>
         <p className="text-gray-400">GTA-inspired Sandbox Web Game made in Three.js</p>
@@ -204,7 +204,7 @@ const LandingPage = () => {
       </div>
       <div className="font-semibold">
           Play Now{" "}
-          <a href="https://loryhoof.github.io/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://crooktown.github.io/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
             CrookTown
           </a>
         </div>
