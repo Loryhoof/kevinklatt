@@ -137,10 +137,11 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">JavaScript</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
-          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">MongoDB</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">PostgreSQL</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Custom LLM</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Elevenlabs</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stable Diffusion</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Express.js</span>
       </div>
       <div className="font-semibold mt-1">
           Website{" "}
@@ -169,6 +170,7 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stable Diffusion</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">LoRa</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Stripe</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Express.js</span>
       </div>
       <div className="font-semibold mt-1">
           Website{" "}
@@ -201,6 +203,7 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Socket.io</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Cannon.js</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WebGL</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Express.js</span>
       </div>
       <div className="font-semibold">
           Play Now{" "}
@@ -233,6 +236,7 @@ const LandingPage = () => {
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WebGL</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Rust</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">WASM</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Express.js</span>
       </div>
       <div className="font-semibold">
           Play Now{" "}
@@ -256,13 +260,15 @@ const LandingPage = () => {
       </div>
       <div>
         <a href="https://thai-learn.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-          <h2 className="text-xl font-bold mb-2">Thai Learning App</h2>
+          <h2 className="text-xl font-bold mb-2">Language Learning App</h2>
         </a>
-        <p className="text-gray-400">Flashcard-inspired Thai language learning Web App</p>
+        <p className="text-gray-400">Flashcard-inspired language language learning Web App</p>
         <div className="flex flex-wrap mt-2">
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">TypeScript</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">React</span>
           <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Tailwind</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Express.js</span>
+          <span className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">Next.js</span>
       </div>
       <div className="font-semibold">
           Website{" "}
