@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord, FaLock } from 'react-icons/fa';
+
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
@@ -116,6 +117,12 @@ const LandingPage = () => {
               <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
+          <div>
+            <h2 className="text-xl font-semibold">Express.js</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -146,6 +153,13 @@ const LandingPage = () => {
       <div className="font-semibold mt-1">
           Website{" "}
           <a href="https://cuti.ai" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+        <div className="font-semibold mt-1 flex flex-row gap-2">
+          <FaLock className='mt-1'></FaLock>
+          Proof of Ownership{" "}
+          <a href="https://www.cuti.ai/proof-of-ownership" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
             Link
           </a>
         </div>
@@ -180,6 +194,13 @@ const LandingPage = () => {
         <div className="font-semibold mt-1">
           Github{" "}
           <a href="https://github.com/Loryhoof/nextjs-saas" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </div>
+        <div className="font-semibold mt-1 flex flex-row gap-2">
+          <FaLock className='mt-1'></FaLock>
+          Proof of Ownership{" "}
+          <a href="https://www.portraitaiart.com/proof-of-ownership" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
             Link
           </a>
         </div>
