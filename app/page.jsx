@@ -3,10 +3,93 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithub, FaYoutube, FaTwitter, FaEnvelope, FaDiscord, FaLock } from 'react-icons/fa';
 
+import { SiPostgresql, SiMongodb, SiReact, SiNextDotJs, SiJavascript, SiTypescript, SiTailwindcss, SiExpress, SiRust, SiDotNet, SiNextdotjs, SiThreedotjs, SiTypeform, SiNodedotjs, SiCsharp } from 'react-icons/si';
+
+
+const SkillBar = ({ name, color, percent }) => (
+  <div>
+    <h2 className="text-xl font-semibold">{name}</h2>
+    <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+      <div className={`h-2 ${color} progress-bar`} style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': `${percent}%` }}></div>
+    </div>
+  </div>
+);
+
+const SkillSection = ({ title, skills }) => (
+  <div className='border p-4 mb-4 mt-4'>
+    <h1 className="text-3xl font-bold mb-4">{title}</h1>
+    {skills.map((skill, index) => (
+      // <SkillBar key={index} name={skill.name} color={skill.color} percent={skill.percent} />
+      <div key={index} className='p-2 flex flex-row gap-4 items-center text-center'>
+         {getIcon(skill.name, skill.color)}
+         <p className='text-2xl font-semibold mb-1'>{skill.name}</p>
+      </div>
+     
+      // <p key={index}>{skill.name}</p>
+    ))}
+  </div>
+);
+
+const getIcon = (name, color) => {
+
+  const size = 30; 
+
+  switch (name) {
+    case "React":
+      return <SiReact className={`inline-block ${color}`} size={size} />;
+    case "Next.js":
+      return <SiNextdotjs className={`inline-block ${color}`} size={size} />;
+    case "JavaScript":
+      return <SiJavascript className={`inline-block ${color}`} size={size} />;
+    case "TypeScript":
+      return <SiTypescript className={`inline-block ${color}`} size={size} />;
+    case "Tailwind":
+      return <SiTailwindcss className={`inline-block ${color}`} size={size} />;
+    case "Express.js":
+      return <SiExpress className={`inline-block ${color}`} size={size} />;
+    case "PostgreSQL":
+      return <SiPostgresql className={`inline-block ${color}`} size={size} />;
+    case "MongoDB":
+      return <SiMongodb className={`inline-block ${color}`} size={size} />;
+    case "Rust":
+      return <SiRust className={`inline-block ${color}`} size={size} />;
+    case "Three.js":
+      return <SiThreedotjs className={`inline-block ${color}`} size={size} />;
+    case "Node.js":
+      return <SiNodedotjs className={`inline-block ${color}`} size={size} />;
+    case "Next.js (API Routes)":
+      return <SiNextdotjs className={`inline-block ${color}`} size={size} />;
+    case "C#":
+      return <SiCsharp className={`inline-block ${color}`} size={size} />;
+    default:
+      return null;
+  }
+};
 
 const LandingPage = () => {
   const [viewCount, setViewCount] = useState(0);
   const [pageViews, setPageViews] = useState(223);
+
+  const databaseSkills = [
+    { name: "PostgreSQL", color: "text-blue-500", percent: 90 },
+    { name: "MongoDB", color: "text-green-500", percent: 90, Icon: FaYoutube},
+  ];
+
+  const frontendSkills = [
+    { name: "React", color: "text-blue-500", percent: 90 },
+    { name: "Next.js", color: "text-white", percent: 90},
+    { name: "TypeScript", color: "text-blue-500", percent: 90 },
+    { name: "JavaScript", color: "text-yellow-500", percent: 90 },
+    { name: "Tailwind", color: "text-teal-500", percent: 90 },
+    { name: "Three.js", color: "text-white", percent: 90 },
+  ];
+
+  const backendSkills = [
+    { name: "Express.js", color: "text-yellow-500", percent: 90 },
+    { name: "Next.js (API Routes)", color: "text-white", percent: 90},
+    { name: "Node.js", color: "text-slate-600", percent: 90},
+    { name: "C#", color: "text-purple-500", percent: 90},
+  ];
 
   useEffect(() => {
     let interval;
@@ -71,14 +154,28 @@ const LandingPage = () => {
         <hr className="mt-8 border-t border-gray-300 w-full hidden md:block" />
       </div>
 
-      {/* Skills Section */}
+
       <div className="container mx-auto mt-16 mb-8">
+        <h1 className="text-3xl font-bold mb-4">Some of my skills</h1>
+        <SkillSection title="Database" skills={databaseSkills} />
+        <SkillSection title="Frontend" skills={frontendSkills} />
+        <SkillSection title="Backend" skills={backendSkills} />
+      </div>
+
+      {/* Skills Section */}
+      {/* <div className="container mx-auto mt-16 mb-8">
         <h1 className="text-3xl font-bold mb-4">Some of my skills</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-xl font-semibold">React</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
               <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">Next.js</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-slate-600 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
           <div>
@@ -100,18 +197,6 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-semibold">Rust</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-orange-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '40%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">C#</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-red-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '75%' }}></div>
-            </div>
-          </div>
-          <div>
             <h2 className="text-xl font-semibold">Tailwind</h2>
             <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
               <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
@@ -123,9 +208,33 @@ const LandingPage = () => {
               <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
             </div>
           </div>
+          <div>
+            <h2 className="text-xl font-semibold">PostgreSQL</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">MongoDB</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">Rust</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-orange-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '25%' }}></div>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">C#</h2>
+            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
+              <div className="h-2 bg-red-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '75%' }}></div>
+            </div>
+          </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div className="container mx-auto mt-16 mb-8">
   <h1 className="text-3xl font-bold mb-4">Things I&apos;ve built</h1>
