@@ -16,7 +16,7 @@ const SkillBar = ({ name, color, percent }) => (
 );
 
 const SkillSection = ({ title, skills }) => (
-  <div className='border p-4 mb-4 mt-4'>
+  <div className='border p-4 mb-4 mt-4 md:w-1/3 border-gray-700 rounded-lg shadow-md'>
     <h1 className="text-3xl font-bold mb-4">{title}</h1>
     {skills.map((skill, index) => (
       // <SkillBar key={index} name={skill.name} color={skill.color} percent={skill.percent} />
@@ -155,86 +155,16 @@ const LandingPage = () => {
       </div>
 
 
-      <div className="container mx-auto mt-16 mb-8">
+      <div className="container mx-auto mt-16 mb-8 ">
         <h1 className="text-3xl font-bold mb-4">Some of my skills</h1>
-        <SkillSection title="Database" skills={databaseSkills} />
-        <SkillSection title="Frontend" skills={frontendSkills} />
-        <SkillSection title="Backend" skills={backendSkills} />
-      </div>
-
-      {/* Skills Section */}
-      {/* <div className="container mx-auto mt-16 mb-8">
-        <h1 className="text-3xl font-bold mb-4">Some of my skills</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-xl font-semibold">React</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Next.js</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-slate-600 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Three.js</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-purple-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">JavaScript</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">TypeScript</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Tailwind</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Express.js</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-yellow-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">PostgreSQL</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-blue-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">MongoDB</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-green-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2s forwards', '--progress-percent': '90%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Rust</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-orange-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '25%' }}></div>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">C#</h2>
-            <div className="relative w-full bg-gray-300 rounded-full overflow-hidden mt-2">
-              <div className="h-2 bg-red-500 progress-bar" style={{ width: '0%', animation: 'progressBar 2.5s forwards', '--progress-percent': '75%' }}></div>
-            </div>
-          </div>
-
+        <div className='mx-auto md:flex flex-row gap-8'>
+          <SkillSection title="Database" skills={databaseSkills} />
+          <SkillSection title="Frontend" skills={frontendSkills} />
+          <SkillSection title="Backend" skills={backendSkills} />
         </div>
-      </div> */}
+        <hr className="mt-8 border-t border-gray-300 w-1/2 mx-auto md:hidden" />
+        <hr className="mt-8 border-t border-gray-300 w-full hidden md:block" />
+      </div>
 
       <div className="container mx-auto mt-16 mb-8">
   <h1 className="text-3xl font-bold mb-4">Things I&apos;ve built</h1>
