@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FaGithub,
   FaYoutube,
@@ -7,6 +9,7 @@ import {
   FaLock
 } from 'react-icons/fa'
 import { SkillSection } from './components/SkillSection'
+import { DownloadSection } from './components/DownloadSection'
 
 const LandingPage = () => {
   const databaseSkills = [
@@ -121,10 +124,10 @@ const LandingPage = () => {
       <div className='container mx-auto mb-8 mt-16 '>
         <h1 className='mb-4 text-3xl font-bold'>Some of my skills</h1>
         <div className='mx-auto flex-row gap-8 md:flex'>
-          <SkillSection title='Database' skills={databaseSkills} />
           <SkillSection title='Frontend' skills={frontendSkills} />
           <SkillSection title='Backend' skills={backendSkills} />
           <SkillSection title='DevOps' skills={devOpsSkills} />
+          <SkillSection title='Database' skills={databaseSkills} />
         </div>
         <hr className='mx-auto mt-8 w-1/2 border-t border-gray-300 md:hidden' />
         <hr className='mt-8 hidden w-full border-t border-gray-300 md:block' />
@@ -474,6 +477,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        {/* Download section */}
+        <DownloadSection />
+       
       </div>
       <footer className='border-t border-gray-800 bg-black py-8 text-gray-400'>
         <div className='container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4'>
@@ -482,13 +488,14 @@ const LandingPage = () => {
             <ul>
               <li>
                 <a
-                  href='mailto:klattkev@gmail.com'
                   className='flex items-center hover:text-white'
+                  onClick={() => navigator.clipboard.writeText("klattkev@gmail.com")}
                 >
                   <FaEnvelope className='mr-2' /> klattkev@gmail.com
                 </a>
               </li>
-              <li className='flex items-center hover:text-white'>
+              <li className='flex items-center hover:text-white' onClick={() => navigator.clipboard.writeText("loryhoof")}>
+                
                 <FaDiscord className='mr-2' /> loryhoof
               </li>
             </ul>
