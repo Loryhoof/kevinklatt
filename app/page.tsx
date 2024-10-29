@@ -476,6 +476,57 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
+
+          {/* Monkey Pox Tracker */}
+          <div className='hover:shake flex items-center rounded-lg border border-gray-700 bg-black p-4 shadow-md'>
+            <div className='mr-4 flex h-24 w-24 items-center justify-center md:h-20 md:w-20 lg:h-20 lg:w-20'>
+              <img
+                src='/assets/projects/black.jpg'
+                alt='Monkeypoxcases.com Logo'
+                className='max-h-full max-w-full rounded-full'
+              />
+            </div>
+            <div>
+              <a
+                href='https://monkeypoxcases.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:underline'
+              >
+                <h2 className='mb-2 text-xl font-bold'>
+                  Monkeypoxcases.com
+                </h2>
+              </a>
+              <p className='text-gray-400'>
+                Monkeypox Cases Tracker
+              </p>
+              <div className='mt-2 flex flex-wrap'>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  TypeScript
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  Vue.js
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  Tailwind
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  Nuxt.js
+                </span>
+              </div>
+              <div className='font-semibold'>
+                Website{' '}
+                <a
+                  href='https://monkeypoxcases.com/'
+                  className='text-blue-500 hover:underline'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Link
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         {/* Download section */}
         <DownloadSection />
