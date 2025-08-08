@@ -106,7 +106,7 @@ const LandingPage = () => {
                   <span className='font-semibold text-yellow-400'>Web</span>. 💻
                 </p>
                 <p className='mt-4 text-2xl'>
-                  With over 4 years of experience in the industry, I specialize
+                  With over 3 years of experience in the industry, I specialize
                   in React, TypeScript and Three.js.{' '}
                 </p>
                 <p className='mt-4 text-2xl'>
@@ -554,7 +554,7 @@ const LandingPage = () => {
         </div>
         <div className='mt-8 text-center'>
           <p className='text-sm'>
-            &copy; 2024 Kevin Klatt. All rights reserved.
+            &copy; 2025 Kevin Klatt. All rights reserved.
           </p>
         </div>
       </footer>
