@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import {
   FaGithub,
@@ -135,8 +135,57 @@ const LandingPage = () => {
 
       <div className='container mx-auto mb-8 mt-16'>
         <h1 className='mb-4 text-3xl font-bold'>Things I&apos;ve built</h1>
-        {/* Project 1 */}
+
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+          {/* Project 0 */}
+          <div className='hover:shake flex items-center rounded-lg border border-gray-700 bg-black p-4 shadow-md'>
+            <div className='mr-4 flex h-36 w-36 items-center justify-center md:h-20 md:w-20 lg:h-20 lg:w-20'>
+              <img
+                src='/assets/projects/kubegame.png'
+                alt='Kubegame logo'
+                className='max-h-full max-w-full rounded-full'
+              />
+            </div>
+            <div>
+              <a
+                href='https://kubegame.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:underline'
+              >
+                <h2 className='mb-2 text-xl font-bold'>Kubegame</h2>
+              </a>
+              <p className='text-gray-400'>
+                Three.js Server-Authoritative Multiplayer Sandbox Game
+              </p>
+              <div className='mt-2 flex flex-wrap'>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  TypeScript
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  React
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  Three.js
+                </span>
+                <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
+                  Express.js
+                </span>
+              </div>
+              <div className='mt-1 font-semibold'>
+                Website{' '}
+                <a
+                  href='https://kubegame.com/'
+                  className='text-blue-500 hover:underline'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Link
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Project 1 */}
           <div className='hover:shake flex items-center rounded-lg border border-gray-700 bg-black p-4 shadow-md'>
             <div className='mr-4 flex h-36 w-36 items-center justify-center md:h-20 md:w-20 lg:h-20 lg:w-20'>
               <img
@@ -147,7 +196,7 @@ const LandingPage = () => {
             </div>
             <div>
               <a
-                href='https://cuti.ai'
+                href='https://cuti-acc-test.vercel.app'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-white hover:underline'
@@ -184,7 +233,7 @@ const LandingPage = () => {
               <div className='mt-1 font-semibold'>
                 Website{' '}
                 <a
-                  href='https://cuti.ai'
+                  href='https://cuti-acc-test.vercel.app/'
                   className='text-blue-500 hover:underline'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -196,7 +245,7 @@ const LandingPage = () => {
                 <FaLock className='mt-1'></FaLock>
                 Proof of Ownership{' '}
                 <a
-                  href='https://www.cuti.ai/proof-of-ownership'
+                  href='https://cuti-acc-test.vercel.app/proof-of-ownership'
                   className='text-blue-500 hover:underline'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -217,7 +266,7 @@ const LandingPage = () => {
             </div>
             <div>
               <a
-                href='https://portraitaiart.com'
+                href='https://fantasysnaps-git-main-kevins-projects-190bf2e4.vercel.app/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-white hover:underline'
@@ -254,7 +303,7 @@ const LandingPage = () => {
               <div className='mt-1 font-semibold'>
                 Website{' '}
                 <a
-                  href='https://portraitaiart.com'
+                  href='https://fantasysnaps-git-main-kevins-projects-190bf2e4.vercel.app/'
                   className='text-blue-500 hover:underline'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -277,7 +326,7 @@ const LandingPage = () => {
                 <FaLock className='mt-1'></FaLock>
                 Proof of Ownership{' '}
                 <a
-                  href='https://www.portraitaiart.com/proof-of-ownership'
+                  href='https://fantasysnaps-git-main-kevins-projects-190bf2e4.vercel.app/proof-of-ownership'
                   className='text-blue-500 hover:underline'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -493,13 +542,9 @@ const LandingPage = () => {
                 rel='noopener noreferrer'
                 className='text-white hover:underline'
               >
-                <h2 className='mb-2 text-xl font-bold'>
-                  Monkeypoxcases.com
-                </h2>
+                <h2 className='mb-2 text-xl font-bold'>Monkeypoxcases.com</h2>
               </a>
-              <p className='text-gray-400'>
-                Monkeypox Cases Tracker
-              </p>
+              <p className='text-gray-400'>Monkeypox Cases Tracker</p>
               <div className='mt-2 flex flex-wrap'>
                 <span className='mb-2 mr-2 inline-block rounded-full bg-gray-800 px-3 py-1 text-sm font-semibold text-gray-300'>
                   TypeScript
@@ -530,7 +575,6 @@ const LandingPage = () => {
         </div>
         {/* Download section */}
         <DownloadSection />
-       
       </div>
       <footer className='border-t border-gray-800 bg-black py-8 text-gray-400'>
         <div className='container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4'>
@@ -540,13 +584,17 @@ const LandingPage = () => {
               <li>
                 <a
                   className='flex items-center hover:text-white'
-                  onClick={() => navigator.clipboard.writeText("klattkev@gmail.com")}
+                  onClick={() =>
+                    navigator.clipboard.writeText('klattkev@gmail.com')
+                  }
                 >
                   <FaEnvelope className='mr-2' /> klattkev@gmail.com
                 </a>
               </li>
-              <li className='flex items-center hover:text-white' onClick={() => navigator.clipboard.writeText("loryhoof")}>
-                
+              <li
+                className='flex items-center hover:text-white'
+                onClick={() => navigator.clipboard.writeText('loryhoof')}
+              >
                 <FaDiscord className='mr-2' /> loryhoof
               </li>
             </ul>
